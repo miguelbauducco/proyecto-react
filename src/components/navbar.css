@@ -1,0 +1,17 @@
+.nav-name{
+    color: gold;
+    font-size: 30px;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbackground{
+    background: linear-gradient(to left, gold , black);
+}
+
+.nav-text{
+    font-size: 20px;
+    color: black;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

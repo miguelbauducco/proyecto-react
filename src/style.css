@@ -1,0 +1,21 @@
+body{
+    margin: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+img{
+width: 120px;
+height: 120px;
+}
+
+.logo{
+        display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    margin:40px;
+}
