@@ -12,7 +12,7 @@ function App() {
       <img src={logo} alt="logo"/>
       </div>
       <Navbar className="navbar"/>
-      <ItemListContainer welcome={'Bienvenido a GG STORE'}/>
+      <ItemListContainer/>
     </div>
   );
 }

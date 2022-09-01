@@ -1,13 +1,15 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './item.css';
+import './itemlist.css';
+import ItemCount from './ItemCount'
 
-const ItemListContainer = ({welcome}) => {
-
+const ItemListContainer = () => {
     return(
 
-    <div className='d-flex justify-content-center'>
-        {welcome}
+    <div className='container d-flex justify-content-center'>
+    <div className='counter'>
+    <ItemCount stock='10' onAdd={ (contador) => sessionStorage.setItem('Cantidad', contador)}/>
+    </div>
     </div>
 
 

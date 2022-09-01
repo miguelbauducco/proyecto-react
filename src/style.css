@@ -1,8 +1,6 @@
 body{
     margin: 40px;
     background-color: black;
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -17,6 +15,8 @@ height: 120px;
 }
 
 .navbar{
-    margin:40px;
+    margin:100px;
+    padding: 10px;
+    border-radius: 20px;
 }
 

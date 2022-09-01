@@ -10,7 +10,7 @@ const CartLogo = () => {
 
 
     <div>
-        <img src={cartimg} alt="logodelcarrito" style={{width:31, height: 31}} />
+    <img src={cartimg} alt="logodelcarrito" style={{width:35, height: 35}} />
     </div>
 
 

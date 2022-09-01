@@ -1,0 +1,31 @@
+.counter{
+margin: 50px;
+color:   gold;
+font-size: 20px;
+font-style: italic;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+button{
+    display: grid;
+    margin-left: 10px;
+    display: inline;
+    color: black;
+    padding: 20px, 50px;
+    border: 3px solid gold;
+    border-radius: 25px;
+}
+
+button:hover{
+    animation: pulsate 2s ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow:
+        0 0 40px gold,
+        0 0 60px black;
+    }
+}
+
