@@ -7,7 +7,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import CartLogo from './CartLogo.js'
 
 
-
 const Navbartest = () => {
 return (
 

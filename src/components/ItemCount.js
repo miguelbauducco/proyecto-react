@@ -7,7 +7,6 @@ const ItemCount = ({ stock, cuentaInicial = 0, onAdd}) =>{
 
     return(
 
-
     <div className='divcont'>
         <h1 className='d-flex justify-content-center'>Contador : {contador}</h1>
 

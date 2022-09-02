@@ -16,7 +16,6 @@ const ItemListContainer = ({ welcome }) => {
     </div>
     </div>
 </div>
-
 )
 };
 
