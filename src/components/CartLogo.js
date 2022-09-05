@@ -18,4 +18,4 @@ const CartLogo = () => {
 )
 };
 
-export default CartLogo
+export default CartLogo;
