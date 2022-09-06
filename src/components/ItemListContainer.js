@@ -8,9 +8,9 @@ const ItemListContainer = ({ welcome }) => {
     return(
     
     <div>
-    <div className='d-flex justify-content-center'>
+    <h1 className='d-flex justify-content-center'>
     {welcome}
-    </div>
+    </h1>
     <div className='container d-flex justify-content-center'>
     <div className='counter'>
     <Item/>

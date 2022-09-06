@@ -1,22 +1,24 @@
 import React from 'react'
 import { useState } from 'react'
 import ItemList from './ItemList'
+import joystickw from '../multimedia/joystickw.jpg'
+import joystickb from '../multimedia/joystickb.jpg'
 
 const Item = () => {
     let [item, setItem] = useState( [
 
         {
         id:1,
-        title: 'Mouse HYPERX',
-        price:'$100',
-        pictureUrl:''
+        title: 'PS4 Joystick WHITE',
+        price:'$200',
+        img:joystickw,
         },
 
         {
         id:2,
-        title: 'Keyboard HYPERX',
+        title: 'PS4 Joystick BLACK',
         price:'$200',
-        pictureUrl:''
+        img:joystickb
         }
 
 ]);
@@ -31,7 +33,7 @@ return (
         return (
             <ItemList
             key={itemList.id} 
-            img={itemList.pictureUrl} 
+            img={itemList.img} 
             title={itemList.title} 
             price={itemList.price}/>
         )

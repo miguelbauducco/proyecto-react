@@ -3,6 +3,13 @@ body{
     background-color: black;
 }
 
+h1{
+    color: goldenrod;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px;
+}
+
 
 img{
 width: 120px;

@@ -8,12 +8,13 @@ const ItemCount = ({ stock, cuentaInicial = 0, onAdd}) =>{
     return(
 
     <div className='divcont'>
-        <h1 className='d-flex justify-content-center'>Contador : {contador}</h1>
 
             <button onClick={() =>setContador(cuentaInicial)}>Limpiar</button>
 
             <button onClick={() =>{
                 contador > cuentaInicial ? setContador(contador - 1): setContador(cuentaInicial) }}>-</button>
+
+                <h3 className='d-flex justify-content-center'>Contador : {contador}</h3>
 
             <button onClick={() =>{
                 contador < stock ?  setContador(contador + 1) : setContador(stock)}}>+</button>
