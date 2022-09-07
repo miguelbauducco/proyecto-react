@@ -41,7 +41,8 @@ const ItemList = () => {
 
 return (
     <div>
-        {products}
+        {
+        console.log('products:', products)}
         {products.map((product )=> {
 
         return (
