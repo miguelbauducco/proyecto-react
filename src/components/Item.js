@@ -1,44 +1,14 @@
 import React from 'react'
-import { useState } from 'react'
 import ItemList from './ItemList'
-import joystickw from '../multimedia/joystickw.jpg'
-import joystickb from '../multimedia/joystickb.jpg'
-
-const Item = () => {
-    let [item, setItem] = useState( [
-
-        {
-        id:1,
-        title: 'PS4 Joystick WHITE',
-        price:'$200',
-        img:joystickw,
-        },
-
-        {
-        id:2,
-        title: 'PS4 Joystick BLACK',
-        price:'$200',
-        img:joystickb
-        }
-
-]);
 
 
-
+const Item = ({item}) => {
 
 return ( 
-    <div>
-    {item.map((itemList )=> {
-
-        return (
-            <ItemList
-            key={itemList.id} 
-            img={itemList.img} 
-            title={itemList.title} 
-            price={itemList.price}/>
-        )
-
-    })}
+        <div className='d-flex row justify-content-center'>
+        <img  className='d-flex justify-content-center' src={item.img} alt='fotoproducto' style={{width:500, height: 300}}/>
+        <li className='d-flex justify-content-center'>{item.title}</li>
+        <li className='d-flex justify-content-center'>{item.price}</li>
     </div>
 );
 }

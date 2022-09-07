@@ -1,14 +1,60 @@
-import React from 'react'
+import React, { useEffect, useState }  from 'react'
+import Item from './Item';
+import joystickw from '../multimedia/joystickw.jpg'
+import joystickb from '../multimedia/joystickb.jpg'
 
 
-const ItemList = (props) => {
+
+const ItemList = () => {
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+    
+    new Promise((resolve, reject) => {
+    
+        setTimeout(() => {
+            resolve([
+        {
+        id:1,
+        title: 'PS4 Joystick WHITE',
+        price:'$200',
+        img:joystickw,
+        },
+
+        {
+        id:2,
+        title: 'PS4 Joystick BLACK',
+        price:'$200',
+        img:joystickb
+        }
+
+
+    ]);  
+    },2000);
+}) .then((data) => {
+        setProducts(data);
+        })
+    },[]
+    )
+
 
 return (
-    <div className='d-flex row justify-content-center'>
-        <img  className='d-flex justify-content-center' src={props.img} alt='fotoproducto' style={{width:500, height: 300}}/>
-        <li className='d-flex justify-content-center'>{props.title}</li>
-        <li className='d-flex justify-content-center'>{props.price}</li>
+    <div>
+        {products}
+        {products.map((product )=> {
+
+        return (
+            <Item
+            key={product.id} 
+            img={product.img} 
+            item={product}
+        />
+        )
+
+    })}
     </div>
+
 );
 }
 
