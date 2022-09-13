@@ -19,22 +19,24 @@ return(
     </Button>
     </div>
 
-    <Modal show={show} onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
-            <div><img src={img} alt="fotoproducto"/></div>
-        <Modal.Title>
+    <Modal show={show} animation={false}>
+        <Modal.Header  className='bg-warning'>
+            <div>
+                <img src={img} alt="fotoproducto" style={{width:200, height:150}}/>
+            </div>
+        <Modal.Title className='bg-warning'>
             <div>{title}</div>
-            <div className='d-flex justify-content-center'>{price}</div>
+            <div className=''>{price}</div>
         </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className='bg-warning'>
             <div>{detail}</div>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className='bg-warning'>
         <Button variant="danger" onClick={handleClose}>
             Cerrar
         </Button>
-        <Button variant="warning" onClick={handleClose}>
+        <Button variant="dark" onClick={handleClose}>
             Agregar al carrito
         </Button>
         </Modal.Footer>
