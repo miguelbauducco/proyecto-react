@@ -32,7 +32,7 @@ const ItemList = () => {
 
     ]);  
     },2000);
-}) .then((data) => {
+}).then((data) => {
         setProducts(data);
         })
     },[]
@@ -40,23 +40,13 @@ const ItemList = () => {
 
 
 return (
-    <div>
-        {
-        console.log('products:', products)}
-        {products.map((product )=> {
-
-        return (
-            <Item
-            key={product.id} 
-            img={product.img} 
-            item={product}
-        />
-        )
-
+<div>
+    {console.log("products:", products)}
+    {products.map((product) => {
+        return(
+    <Item key={products.id} img={products.img} item={product} />);
     })}
-    </div>
-
+</div>
 );
 }
-
 export default ItemList;
