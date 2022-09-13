@@ -11,7 +11,6 @@ return (
         <li className='d-flex justify-content-center'>{item.price}</li>
         <ItemDetail id={item.id} title={item.title} detail={item.detail} img={item.img} price={item.price}/>
     </div>
-
 );
 }
 
