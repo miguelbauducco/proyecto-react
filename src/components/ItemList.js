@@ -42,13 +42,14 @@ const ItemList = () => {
     )
 
 
-return(
+return( 
 <div>
     {console.log("products:", products)}
     {products.map((product) => {
-    <Item key={products.id} img={products.img} item={product} />;
+    <Item key={products.id} img={products.img} item={product}/>;
     })}
 </div>
-)};
+);
+}
 
 export default ItemList;
