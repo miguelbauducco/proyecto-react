@@ -32,7 +32,7 @@ const ItemList = () => {
         detail: 'Joystick inalambrico de Playstation 4 con garantia incluida'
         }
 
-
+    
     ]);  
     },2000);
 }).then((data) => {
@@ -45,9 +45,10 @@ const ItemList = () => {
 return( 
 <div>
     {console.log("products:", products)}
-    {products.map((product) => {
-    <Item key={products.id} img={products.img} item={product}/>;
-    })}
+    {products.map(product => 
+    <Item key={product.id} img={product.img} item={product}/>
+    )
+}
 </div>
 );
 }
