@@ -1,5 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from "../components/ItemListContainer";
 
 
 
@@ -7,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => {
 return (
     <div>
-ESTOY EN HOME
+    <ItemListContainer welcome={'Bienvenido a GG STORE'}/>
     </div>
 )
 }

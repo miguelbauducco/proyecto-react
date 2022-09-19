@@ -2,11 +2,15 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from './ItemCount';
 import ItemDetailContainer from './ItemDetailContainer';
+import { Link } from 'react-router-dom';
 
 
 const Item = ({item}) => {
 
-return ( 
+
+
+return (
+    <Link to='/category/'>
     <div className='d-flex row justify-content-center'>
         <img  className='d-flex justify-content-center' src={item.img} alt='fotoproducto' style={{width:500, height: 300}}/>
         <li className='d-flex justify-content-center'>{item.title}</li>
@@ -14,9 +18,9 @@ return (
         <div>
         <ItemCount stock='10' onAdd={ (contador) => sessionStorage.setItem('Cantidad', contador)}/>
         </div>
-
-        <ItemDetailContainer key={item.id} productDetail={item}/>
+        {/* <ItemDetailContainer key={item.id} productDetail={item}/>  */}
     </div>
+    </Link>
 );
 }
 
