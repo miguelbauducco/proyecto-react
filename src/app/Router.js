@@ -5,12 +5,12 @@ import Layout from "./Layout";
 
 const Router = () => (
     <BrowserRouter>
-        <Routes> 
-            <Route element={<Layout/>}>
-                <Route index element={<Home/>}/>
-                <Route path="/contact/" element={<Contact/>}/>
-                <Route path="*" element={<div>404</div> } />
-            </Route>
+        <Routes>
+                <Route element={<Layout/>}>
+                <Route index path='/home' element={<Home/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="*" element={<div>404</div>}/>
+                </Route>
         </Routes>
     </BrowserRouter>
 );

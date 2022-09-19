@@ -6,11 +6,11 @@ import Modal from 'react-bootstrap/Modal';
 
 
 
-export const ItemDetail = ({title,price,img,detail}) => {
+export const ItemDetail = ({productDetailInfo}) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+    console.log(productDetailInfo);
 return(
     <>
     <div className='d-flex justify-content-center'>
@@ -18,19 +18,18 @@ return(
         Detalles de producto
     </Button>
     </div>
-
     <Modal show={show} animation={false}>
         <Modal.Header  className='bg-warning'>
             <div>
-                <img src={img} alt="fotoproducto" style={{width:200, height:150}}/>
+                <img src={productDetailInfo.img} alt="fotoproducto" style={{width:200, height:150}}/>
             </div>
         <Modal.Title className='bg-warning'>
-            <div>{title}</div>
-            <div className=''>{price}</div>
+            <div>{productDetailInfo.title}</div>
+            <div className=''>{productDetailInfo.price}</div>
         </Modal.Title>
         </Modal.Header>
         <Modal.Body className='bg-warning'>
-            <div>{detail}</div>
+            <div>{productDetailInfo.detail}</div>
         </Modal.Body>
         <Modal.Footer className='bg-warning'>
         <Button variant="danger" onClick={handleClose}>

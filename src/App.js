@@ -12,7 +12,7 @@ function App() {
         <img src={logo} alt="logo" style={{width:300, height:250}}/>
       </div>
     <Router/>
-    <ItemListContainer welcome={'Bienvenido a GG STORE'}/> 
+    <ItemListContainer welcome={'Bienvenido a GG STORE'}/>
     </div>
   );
 }
