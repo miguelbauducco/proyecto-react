@@ -18,12 +18,12 @@ return (
                     </Link>
                 </Container>
                 <Nav className="me-auto">
-                    <Link to='/category/joystick'><div>Joystick</div></Link>
-                    <Link to='/category/mouse'><div>Mouse</div></Link>
+                    <Link to='/category/joystick'><div className='nav-text'>Joystick</div></Link>
+                    <Link to='/category/mouse'><div className='nav-text'>Mouse</div></Link>
                     <Link><div className='nav-text'>Catalogo</div></Link>
                     <Link><div className='nav-text'>Contacto</div></Link>
                     <Link><div className='nav-text'>Conocenos</div></Link>
-                    <Link  href="#cart"><div className='cart'><CartLogo/></div></Link>
+                    <Link><div className='cart'><CartLogo/></div></Link>
                 </Nav>
             </Navbar>
         </>

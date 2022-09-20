@@ -1,7 +1,5 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemCount from './ItemCount';
-import ItemDetailContainer from './ItemDetailContainer';
 import { Link } from 'react-router-dom';
 
 
