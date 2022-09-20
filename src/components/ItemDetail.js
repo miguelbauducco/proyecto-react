@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export const ItemDetail = ({productDetailInfo}) => {
 
 return(
-    <>
+    <div>
     <h3>
         Detalles de producto
     </h3>
+    {console.log(productDetailInfo)}
             <div>
                 <img src={productDetailInfo.img} alt="fotoproducto" style={{width:200, height:150}}/>
             </div>
@@ -16,7 +17,7 @@ return(
         <button>
             Agregar al carrito
         </button>
-    </>
+    </div>
 );
 }
 

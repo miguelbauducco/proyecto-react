@@ -12,6 +12,7 @@ const Router = () => (
                 <Route index path='/' element={<Home/>}/>
                 <Route path='/category/:category' element={<ItemListContainer/>}/>
                 <Route path='/category' element={<ItemListContainer/>}/>
+                
                 <Route path='/detail/:id' element={<ItemDetailContainer/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 {/* <Route path="*" element={<div>404</div>}/> */}

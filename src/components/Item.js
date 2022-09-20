@@ -10,7 +10,7 @@ const Item = ({item}) => {
 
 
 return (
-    <Link to='/category/'>
+    <Link to={`/detail/${item.id}`}>
     <div className='d-flex row justify-content-center'>
         <img  className='d-flex justify-content-center' src={item.img} alt='fotoproducto' style={{width:500, height: 300}}/>
         <li className='d-flex justify-content-center'>{item.title}</li>
