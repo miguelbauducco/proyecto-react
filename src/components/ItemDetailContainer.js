@@ -18,13 +18,11 @@ const ItemDetailContainer = () => {
     },[])
 
     
-        return(    
+    return(    
         <div>
             <ItemDetail productDetailInfo={productDetail}/>
         </div>
-            
-
-)  
+    )  
 }
 
 

@@ -4,19 +4,17 @@ import './itemlist.css';
 import ItemList from './ItemList';
 
 const ItemListContainer = ({ welcome }) => {
-    return(
     
-    <div>
-    <h1 className='d-flex justify-content-center'>
-    {welcome}
-    </h1>
-    <div className='container d-flex justify-content-center'>
-    <div className='counter'>
-    <ItemList/> 
-    </div>
-    </div>
-</div>
-)
+    return(
+        <div>
+            <h1 className='d-flex justify-content-center'>
+                {welcome}
+            </h1>
+            <div className='container d-flex justify-content-center'>
+                <ItemList/> 
+            </div>
+        </div>
+    )
 };
 
 export default ItemListContainer;

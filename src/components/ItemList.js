@@ -8,43 +8,37 @@ import { useParams } from 'react-router-dom';
 const ItemList = () => {
 
     const {category} = useParams()
-
-
-
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-    
-    new Promise((resolve, reject) => {
-    
-        setTimeout(() => {
-            resolve(product);  
-    },2000);
-}).then((data) => {
+        
+        new Promise((resolve, reject) => {
+        
+            setTimeout(() => {
+                resolve(product);  
+            },2000);
+        }).then((data) => {
 
-    if(category){
+        if(category){
 
-        const list = data.filter (e => {
-            return e.category == category
-        })
-        setProducts(list);
-    }else{
-        setProducts(data);
-    }
+            const list = data.filter (e => {
+                return e.category == category
+            })
+            setProducts(list);
+        }else{
+            setProducts(data);
+        }
 
-    })
-    },[category]
-    )
+    })},[category])
 
 
-return(  
-<div>
-    {products.map(product => 
-    <Item key={product.id} item={product}/>
-    )
-}
-</div>
-);
+    return(  
+        <div>
+            {products.map(product => 
+                <Item key={product.id} item={product}/>
+            )}
+        </div>
+    );
 }
 
 export default ItemList;

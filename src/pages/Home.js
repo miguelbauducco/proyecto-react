@@ -6,11 +6,11 @@ import ItemListContainer from "../components/ItemListContainer";
 
 
 const Home = () => {
-return (
-    <div>
-    <ItemListContainer welcome={'Bienvenido a GG STORE'}/>
-    </div>
-)
+    return (
+        <div>
+            <ItemListContainer welcome={'Bienvenido a GG STORE'}/>
+        </div>
+    )
 }
 
 export default Home
