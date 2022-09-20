@@ -26,7 +26,7 @@ const product = [{
         title: 'Mouse Hyperx STINGER',
         price:'$50',
         img:joystickb,
-        detail: 'MOUSE RE POXI'
+        detail: 'MOUSE HyperX '
 }]
 
 export default product ;
