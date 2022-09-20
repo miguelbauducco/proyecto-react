@@ -23,7 +23,7 @@ return (
                     <Link><div className='nav-text'>Catalogo</div></Link>
                     <Link><div className='nav-text'>Contacto</div></Link>
                     <Link><div className='nav-text'>Conocenos</div></Link>
-                    <Link><div className='cart'><CartLogo/></div></Link>
+                    <Link to='/cart'><div className='cart'><CartLogo/></div></Link>
                 </Nav>
             </Navbar>
         </>

@@ -1,7 +1,4 @@
-body{
-    margin: 40px;
-    background-color: black;
-}
+
 
 h1{
     color: goldenrod;
@@ -11,13 +8,8 @@ h1{
 }
 
 
-img{
-    width: 120px;
-    height: 120px;
-}
-
 .logo{
-        display: flex;
+    display: flex;
     justify-content: center;
 }
 

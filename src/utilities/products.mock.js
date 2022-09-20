@@ -1,5 +1,7 @@
 import joystickw from '../multimedia/joystickw.jpg'
 import joystickb from '../multimedia/joystickb.jpg'
+import mouse1 from '../multimedia/hyperx.png'
+import mouse2 from '../multimedia/redragon.png'
 
 
 const product = [{
@@ -25,8 +27,19 @@ const product = [{
         category:'mouse',
         title: 'Mouse Hyperx STINGER',
         price:'$50',
-        img:joystickb,
+        img: mouse1,
         detail: 'MOUSE HyperX '
-}]
+        },
+
+        {
+        id:4,
+        category:'mouse',
+        title: 'Mouse Redragon CLOUD',
+        price:'$30',
+        img: mouse2,
+        detail: 'Mouse Redragon Cloud '
+        }
+
+]
 
 export default product ;
