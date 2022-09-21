@@ -1,21 +1,13 @@
-.nav-name{
-    text-decoration: none;
-    color: gold;
-    font-size: 30px;
-    font-style: italic;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: flex-start
-}
+
 
 .navbackground{
-    background: linear-gradient(to left, gold , black);
+    background: linear-gradient(to left, goldenrod , black);
 }
 
 
 .nav-text{
     font-size: 23px;
-    color: goldenrod;
+    color: gold;
     font-style: italic;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;

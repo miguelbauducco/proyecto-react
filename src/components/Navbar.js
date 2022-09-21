@@ -25,7 +25,7 @@ return (
                     </Dropdown.Menu>
             </Dropdown>
 
-                    <Link className='nav-text'>
+                    <Link to='/contact' className='nav-text'>
                         Contacto
                     </Link>
                     <Link className=' nav-text'>
