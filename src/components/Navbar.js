@@ -1,32 +1,41 @@
 import React from 'react'
-import './navbar.css';
+import '../styles/navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import CartLogo from './CartLogo'
 import Navbar from 'react-bootstrap/Navbar';
-import CartLogo from './CartLogo.js'
 import { Link } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 const Navbartest = () => {
 return (
-        <>
-            <Navbar className='navbackground'>
-                <Container>
-                    <Link to='/'>
-                        <Navbar.Brand><div className='nav-name'>GG STORE</div></Navbar.Brand>
+
+    <Navbar className='navbackground'> 
+        <Nav className='container'>
+
+            <Dropdown>
+                <Dropdown.Toggle className='droptitle' variant="warning" id="dropdown-basic">
+                    Catalogo
+                </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item><Link to='/category/mouse'>Mouse</Link></Dropdown.Item>
+                        <Dropdown.Item><Link to='/category/joystick'>Joystick</Link></Dropdown.Item>
+                        <Dropdown.Item><Link>noexistetdv</Link></Dropdown.Item>
+                    </Dropdown.Menu>
+            </Dropdown>
+
+                    <Link className='nav-text'>
+                        Contacto
                     </Link>
-                </Container>
-                <Nav className="me-auto">
-                    <Link to='/category/joystick'><div className='nav-text'>Joystick</div></Link>
-                    <Link to='/category/mouse'><div className='nav-text'>Mouse</div></Link>
-                    <Link><div className='nav-text'>Catalogo</div></Link>
-                    <Link><div className='nav-text'>Contacto</div></Link>
-                    <Link><div className='nav-text'>Conocenos</div></Link>
-                    <Link to='/cart'><div className='cart'><CartLogo/></div></Link>
-                </Nav>
+                    <Link className=' nav-text'>
+                        Conocenos
+                    </Link>
+                    <Link to='/cart'>
+                        <CartLogo/>
+                    </Link> 
+                </Nav> 
             </Navbar>
-        </>
 
 )
 }

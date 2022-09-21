@@ -2,6 +2,7 @@ import joystickw from '../multimedia/joystickw.jpg'
 import joystickb from '../multimedia/joystickb.jpg'
 import mouse1 from '../multimedia/hyperx.png'
 import mouse2 from '../multimedia/redragon.png'
+import xboxw from '../multimedia/xboxw.png'
 
 
 const product = [{
@@ -38,6 +39,15 @@ const product = [{
         price:'$30',
         img: mouse2,
         detail: 'Mouse Redragon Cloud '
+        },
+
+        {
+        id:5,
+        category:'joystick',
+        title: 'Joystick XBOX',
+        price:'$150',
+        img: xboxw,
+        detail: 'Joystick XBOX WHITE'
         }
 
 ]
