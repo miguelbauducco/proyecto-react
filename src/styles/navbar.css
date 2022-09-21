@@ -27,9 +27,15 @@
 
 .droptitle{
     font-size: 18px;
-    color: goldenrod;
-    -webkit-text-stroke: 1px black;
+    color: black;
+    -webkit-text-stroke: 0.2px gold;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
 }
 
+.dropdownmenu{
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    border: 2px solid whitesmoke;
+}

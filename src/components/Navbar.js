@@ -18,7 +18,7 @@ return (
                 <Dropdown.Toggle className='droptitle' variant="warning" id="dropdown-basic">
                     Catalogo
                 </Dropdown.Toggle>
-                    <Dropdown.Menu>
+                    <Dropdown.Menu className='dropdownmenu'>
                         <Dropdown.Item><Link to='/category/mouse'>Mouse</Link></Dropdown.Item>
                         <Dropdown.Item><Link to='/category/joystick'>Joystick</Link></Dropdown.Item>
                         <Dropdown.Item><Link>noexistetdv</Link></Dropdown.Item>

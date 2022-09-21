@@ -1,8 +1,10 @@
 import joystickw from '../multimedia/joystickw.jpg'
 import joystickb from '../multimedia/joystickb.jpg'
+import xboxw from '../multimedia/xboxw.png'
 import mouse1 from '../multimedia/hyperx.png'
 import mouse2 from '../multimedia/redragon.png'
-import xboxw from '../multimedia/xboxw.png'
+import mouse3 from '../multimedia/logitech.png'
+
 
 
 const product = [{
@@ -25,6 +27,16 @@ const product = [{
 
         {
         id:3,
+        category:'joystick',
+        title: 'Joystick XBOX',
+        price:'$150',
+        img: xboxw,
+        detail: 'Joystick XBOX WHITE'
+        },
+
+
+        {
+        id:4,
         category:'mouse',
         title: 'Mouse Hyperx STINGER',
         price:'$50',
@@ -33,7 +45,7 @@ const product = [{
         },
 
         {
-        id:4,
+        id:5,
         category:'mouse',
         title: 'Mouse Redragon CLOUD',
         price:'$30',
@@ -42,13 +54,15 @@ const product = [{
         },
 
         {
-        id:5,
-        category:'joystick',
-        title: 'Joystick XBOX',
-        price:'$150',
-        img: xboxw,
-        detail: 'Joystick XBOX WHITE'
+        id:6,
+        category:'mouse',
+        title: 'Mouse Logitech G203',
+        price:'$60',
+        img: mouse3,
+        detail: 'Mouse Logitech G203 '
+
         }
+
 
 ]
 
