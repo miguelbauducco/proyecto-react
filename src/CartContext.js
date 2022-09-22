@@ -10,8 +10,10 @@ const CartProvider = ( {children} ) => {
     const [cart, setCart] = useState([]);
 
 
+    const cleanCart = () => setCart([]);
 
-
+    const inCart = (id) => 
+    cart.find(product => product.id === id) ? true : false;
 
 
     return (
