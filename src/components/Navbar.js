@@ -14,7 +14,7 @@ return (
     <Navbar className='navbackground'> 
         <Nav className='container'>
 
-            <Dropdown>
+            <Dropdown className='dropdownbox'>
                 <Dropdown.Toggle className='droptitle' variant="warning" id="dropdown-basic">
                     Catalogo
                 </Dropdown.Toggle>

@@ -1,9 +1,15 @@
 import React from 'react'
+import { useContext } from 'react';
+import {CartContext} from '../CartContext'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 
 const Item = ({item}) => {
+
+    const nombre = useContext(CartContext);
+    console.log('item', nombre);
+
 
     return (
         <Link to={`/detail/${item.id}`}>

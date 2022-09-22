@@ -31,3 +31,20 @@
     font-style: italic;
     border: 2px solid whitesmoke;
 }
+
+@media screen and (max-width: 630px) {
+    nav{
+        margin: 13px;
+        padding: 13px;
+    }
+
+    .nav-text{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .droptitle{
+        font-size:10px;
+    }
+}

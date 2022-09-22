@@ -1,9 +1,14 @@
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from '../pages/Contact';
 import ItemListContainer from '../components/ItemListContainer'
+import React from 'react'
 import Home from '../pages/Home'
 import Layout from "./Layout";
 import ItemDetailContainer from '../components/ItemDetailContainer';
+import Cart from '../pages/Cart';
+
+
+
 
 const Router = () => (
     <BrowserRouter>
@@ -14,7 +19,7 @@ const Router = () => (
             <Route path='/category' element={<ItemListContainer/>}/>
             <Route path='/detail/:id' element={<ItemDetailContainer/>}/>
             <Route path="/contact" element={<Contact/>}/>
-            {/* <Route path="*" element={<div>404</div>}/> */}
+            <Route path="/cart" element={<Cart/>}/>
             </Route>
         </Routes>
     </BrowserRouter>
