@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav';
-import CartLogo from './CartLogo'
+import CartWidget from './CartWidget'
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -32,7 +32,7 @@ return (
                         Conocenos
                     </Link>
                     <Link to='/cart'>
-                        <CartLogo/>
+                        <CartWidget/>
                     </Link> 
                 </Nav> 
             </Navbar>
