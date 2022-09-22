@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from './ItemCount';
-import { useCartContext } from '../CartContext'
+import  { useCartContext } from '../CartContext'
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
