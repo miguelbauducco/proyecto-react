@@ -22,7 +22,7 @@ const ItemList = () => {
         if(category){
 
             const list = data.filter (e => {
-                return e.category == category
+                return e.category === category
             })
             setProducts(list);
         }else{

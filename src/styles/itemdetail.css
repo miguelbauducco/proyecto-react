@@ -1,0 +1,18 @@
+.productdetail{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    color: goldenrod;
+    font-size: 25px;
+    font-style: italic;
+    -webkit-text-stroke: 1px black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.finishbutton{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin: 15px;
+}
