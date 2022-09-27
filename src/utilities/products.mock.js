@@ -11,7 +11,7 @@ const product = [{
         id:1,
         category:'joystick',
         title: 'PS4 Joystick WHITE',
-        price:'$200',
+        price:'200',
         img:joystickw,
         detail: 'Joystick inalambrico de Playstation 4 con garantia incluida'
         },
@@ -20,7 +20,7 @@ const product = [{
         id:2,
         category:'joystick',
         title: 'PS4 Joystick BLACK',
-        price:'$200',
+        price:'200',
         img:joystickb,
         detail: 'Joystick inalambrico de Playstation 4 con garantia incluida'
         },
@@ -29,7 +29,7 @@ const product = [{
         id:3,
         category:'joystick',
         title: 'Joystick XBOX',
-        price:'$150',
+        price:'150',
         img: xboxw,
         detail: 'Joystick XBOX WHITE'
         },
@@ -39,7 +39,7 @@ const product = [{
         id:4,
         category:'mouse',
         title: 'Mouse Hyperx STINGER',
-        price:'$50',
+        price:'50',
         img: mouse1,
         detail: 'MOUSE HyperX '
         },
@@ -48,7 +48,7 @@ const product = [{
         id:5,
         category:'mouse',
         title: 'Mouse Redragon CLOUD',
-        price:'$30',
+        price:'30',
         img: mouse2,
         detail: 'Mouse Redragon Cloud '
         },
@@ -57,7 +57,7 @@ const product = [{
         id:6,
         category:'mouse',
         title: 'Mouse Logitech G203',
-        price:'$60',
+        price:'60',
         img: mouse3,
         detail: 'Mouse Logitech G203 '
 

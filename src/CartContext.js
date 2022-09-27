@@ -33,12 +33,11 @@ const CartProvider = ( {children} ) => {
     const inCart = (id) => 
     cart.find(product => product.id === id) ? true : false;
 
-    const removeOfCart = (id) => 
-    setCart(cart.filter(product => product.id !== id));
+    const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
 
 
     return (
-        <CartContext.Provider value={{ cleanCart, addProduct, inCart, removeOfCart, totalPrice, totalProducts, cart }}>
+        <CartContext.Provider value={{ cleanCart, addProduct, inCart, removeProduct, totalPrice, totalProducts, cart }}>
             {children}
         </CartContext.Provider>
 )

@@ -6,7 +6,7 @@ import { useCartContext } from '../CartContext';
 
 
 
-const CartLogo = () => {
+const CartWidget= () => {
 
     const {totalProducts} =  useCartContext();
     
@@ -18,4 +18,4 @@ const CartLogo = () => {
     )
 };
 
-export default CartLogo;
+export default CartWidget;
