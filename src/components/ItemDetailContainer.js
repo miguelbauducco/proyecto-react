@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
             resolve(product)
         })
         getDetails.then(res=>setProductDetail(res.find(product => product.id === parseInt(id))))
-    },[])
+    },[id])
 
     
     return(    

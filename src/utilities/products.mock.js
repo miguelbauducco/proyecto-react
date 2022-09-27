@@ -1,66 +1,65 @@
-import joystickw from '../multimedia/joystickw.jpg'
-import joystickb from '../multimedia/joystickb.jpg'
-import xboxw from '../multimedia/xboxw.png'
-import mouse1 from '../multimedia/hyperx.png'
-import mouse2 from '../multimedia/redragon.png'
-import mouse3 from '../multimedia/logitech.png'
+import ent1 from '../multimedia/ent1.jpg'
+import ent2 from '../multimedia/ent2.jpg'
+import ent3 from '../multimedia/ent3.png'
+import bikini1 from '../multimedia/bikini1.png'
+import bikini2 from '../multimedia/bikini2.png'
+import bikini3 from '../multimedia/bikini3.png'
 
 
 
 const product = [{
         id:1,
-        category:'joystick',
-        title: 'PS4 Joystick WHITE',
+        category:'enterizas',
+        title: 'Enteriza 1',
         price:'200',
-        img:joystickw,
-        detail: 'Joystick inalambrico de Playstation 4 con garantia incluida'
+        img:ent1,
+        detail: 'Lorem ipsum dolor sit amet consectetur adipisicing'
         },
 
         {
         id:2,
-        category:'joystick',
-        title: 'PS4 Joystick BLACK',
+        category:'enterizas',
+        title: 'Enteriza 2',
         price:'200',
-        img:joystickb,
-        detail: 'Joystick inalambrico de Playstation 4 con garantia incluida'
+        img:ent2,
+        detail: 'Lorem ipsum dolor sit amet consectetur adipisicing'
         },
 
         {
         id:3,
-        category:'joystick',
-        title: 'Joystick XBOX',
+        category:'enterizas',
+        title: 'Enteriza 3',
         price:'150',
-        img: xboxw,
-        detail: 'Joystick XBOX WHITE'
+        img: ent3,
+        detail: 'Lorem ipsum dolor sit amet consectetur adipisicing'
         },
 
 
         {
         id:4,
-        category:'mouse',
-        title: 'Mouse Hyperx STINGER',
-        price:'50',
-        img: mouse1,
-        detail: 'MOUSE HyperX '
+        category:'bikini',
+        title: 'Bikini 1',
+        price:'350',
+        img: bikini1,
+        detail: 'Lorem ipsum dolor sit amet consectetur adipisicing'
         },
 
         {
         id:5,
-        category:'mouse',
-        title: 'Mouse Redragon CLOUD',
-        price:'30',
-        img: mouse2,
-        detail: 'Mouse Redragon Cloud '
+        category:'bikini',
+        title: 'Bikini 2',
+        price:'300',
+        img: bikini2,
+        detail: 'Lorem ipsum dolor sit amet consectetur adipisicing'
         },
 
         {
         id:6,
-        category:'mouse',
-        title: 'Mouse Logitech G203',
-        price:'60',
-        img: mouse3,
-        detail: 'Mouse Logitech G203 '
-
+        category:'bikini',
+        title: 'Bikini 3',
+        price:'250',
+        img: bikini3,
+        detail: 'Lorem ipsum dolor sit amet consectetur adipisicing'
         }
 
 

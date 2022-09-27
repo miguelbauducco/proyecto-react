@@ -19,17 +19,14 @@ return (
                     Catalogo
                 </Dropdown.Toggle>
                     <Dropdown.Menu className='dropdownmenu'>
-                        <Dropdown.Item><Link to='/category/mouse' className='nav-text-dropdown'>Mouse</Link></Dropdown.Item>
-                        <Dropdown.Item><Link to='/category/joystick' className='nav-text-dropdown'>Joystick</Link></Dropdown.Item>
+                        <Dropdown.Item><Link to='/category/enterizas' className='nav-text-dropdown'>Enterizas</Link></Dropdown.Item>
+                        <Dropdown.Item><Link to='/category/bikini' className='nav-text-dropdown'>Bikini</Link></Dropdown.Item>
                         <Dropdown.Item ><Link className='nav-text-dropdown'>noexistetdv</Link></Dropdown.Item>
                     </Dropdown.Menu>
             </Dropdown>
 
                     <Link to='/contact' className='nav-text'>
                         Contacto
-                    </Link>
-                    <Link className=' nav-text'>
-                        Conocenos
                     </Link>
                     <Link to='/cart'>
                         <CartWidget/>

@@ -10,7 +10,7 @@ const Layout = () => {
         <div>
             <Link to='/'>
             <div className='logo'>
-            <img src={logo} alt="logo" style={{width:300, height:250}}/>
+            <img src={logo} alt="logo" style={{width:450, height:350}}/>
             </div>
             </Link>
             <Navbar/>

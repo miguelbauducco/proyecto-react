@@ -8,7 +8,7 @@ import ItemListContainer from "../components/ItemListContainer";
 const Home = () => {
     return (
         <div>
-            <ItemListContainer welcome={'Bienvenido a GG STORE'}/>
+            <ItemListContainer welcome={'Bienvenido a REGNUM'}/>
         </div>
     )
 }

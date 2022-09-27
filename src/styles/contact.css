@@ -1,0 +1,21 @@
+.h1contact{
+    font-size: 45px;
+    color: gold;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    display: flex;
+    -webkit-text-stroke: 1px black;
+    margin: 100px;
+}
+
+.contact{
+    font-size: 23px;
+    margin: 30px;
+    color: gold;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    display: flex;
+    -webkit-text-stroke: 1px black;
+}
