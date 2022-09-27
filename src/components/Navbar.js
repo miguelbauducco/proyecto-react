@@ -19,9 +19,9 @@ return (
                     Catalogo
                 </Dropdown.Toggle>
                     <Dropdown.Menu className='dropdownmenu'>
-                        <Dropdown.Item><Link to='/category/mouse'>Mouse</Link></Dropdown.Item>
-                        <Dropdown.Item><Link to='/category/joystick'>Joystick</Link></Dropdown.Item>
-                        <Dropdown.Item><Link>noexistetdv</Link></Dropdown.Item>
+                        <Dropdown.Item><Link to='/category/mouse' className='nav-text-dropdown'>Mouse</Link></Dropdown.Item>
+                        <Dropdown.Item><Link to='/category/joystick' className='nav-text-dropdown'>Joystick</Link></Dropdown.Item>
+                        <Dropdown.Item ><Link className='nav-text-dropdown'>noexistetdv</Link></Dropdown.Item>
                     </Dropdown.Menu>
             </Dropdown>
 
