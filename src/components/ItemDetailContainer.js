@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import {getFirestore, doc, getDoc} from 'firebase/firestore';
 import ItemDetail from './ItemDetail'
 import product from '../utilities/products.mock';
 
@@ -11,15 +12,15 @@ const ItemDetailContainer = () => {
     const {id} = useParams()
     
     useEffect(() =>{
-        const getDetails = new Promise ((resolve,reject) =>{
-            resolve(product)
-        })
-        getDetails.then(res=>setProductDetail(res.find(product => product.id === parseInt(id))))
-    },[id])
+        const querydb = getFirestore();
+        const queryDoc = doc (querydb, 'products', 'QdSddbPfZ2Q89LpmBjQR');
+        getDoc(queryDoc)
+        .then(res => setProductDetail({id: res.id, ...res.data() }))
+    }, [])
 
     
     return(    
-        <div>
+        <div>   
             <ItemDetail productDetailInfo={productDetail}/>
         </div>
     )  
