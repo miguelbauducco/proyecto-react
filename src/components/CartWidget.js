@@ -12,7 +12,7 @@ const CartWidget= () => {
     
     return (
         <div>
-            <img src={cartimg} alt="logodelcarrito" style={{width:45, height: 45}} />
+            <img src={cartimg} alt="logocarrito" style={{width:45, height: 45}} />
             <p className=''>{totalProducts() || ''}</p>
         </div>
     )

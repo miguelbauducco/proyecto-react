@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import Layout from "./Layout";
 import ItemDetailContainer from '../components/ItemDetailContainer';
 import Cart from '../pages/Cart';
+import BuyForm from '../pages/BuyForm';
 
 
 
@@ -20,6 +21,7 @@ const Router = () => (
             <Route path='/detail/:id' element={<ItemDetailContainer/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/cart" element={<Cart/>}/>
+            <Route path='/buyform' element={<BuyForm/>}/>
             </Route>
         </Routes>
     </BrowserRouter>
