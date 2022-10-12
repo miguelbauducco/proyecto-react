@@ -1,0 +1,26 @@
+
+.element{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    font-size: 23px;
+    margin: 33px;
+    color: gold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    -webkit-text-stroke: 1px black;
+    font-style: italic;
+}
+
+.title{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    font-size: 35px;
+    margin: 30px;
+    color: goldenrod;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    -webkit-text-stroke: 1px black;
+    font-style: italic;
+}

@@ -11,15 +11,6 @@ const Cart = () => {
 
     const buy = {
 
-        buyer: {
-            name:'',
-            email:'',
-            phone:'',
-            city:'',
-            state:'',
-            address:'',
-        },
-
         items: cart.map( product => ({ id: product.id, title: product.title, price: product.price, quantity: product.quantity})) ,
         total: totalPrice(),
 
@@ -44,15 +35,18 @@ const Cart = () => {
 
 return (
     <>
+    <div>
         {
             cart.map(product => <ItemCart key={product.id} product={product}/>)
         }
         <p>Precio total: ${totalPrice()}</p>
+        </div>
         <div>
-        <Link to='/buyform'><button onClick={buyClick}>
-            Comprar
-        </button>
-        </Link>
+            <Link to='/buyform'>
+            <button onClick={buyClick}>
+                Comprar
+            </button>
+            </Link>
         </div>
     </>
 )

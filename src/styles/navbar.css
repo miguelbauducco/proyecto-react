@@ -1,8 +1,6 @@
 
-
 .navbackground{
-    /* background: linear-gradient(to left, goldenrod , black); */
-    background: black;
+    background: linear-gradient(to left, black, goldenrod);
 }
 
 
@@ -13,7 +11,6 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     -webkit-text-stroke: 1px black;
-
 }
 
 .droptitle{
