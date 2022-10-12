@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import firebaseApp from '../firebase/config'
 import  { getFirestore, collection, addDoc }  from 'firebase/firestore'
+import { useCartContext } from '../CartContext';
 
 
     const db = getFirestore()
@@ -12,15 +13,25 @@ import  { getFirestore, collection, addDoc }  from 'firebase/firestore'
 export const BuyForm = () => {
 
     const initialValue = {
-            name:'', 
-            email:'',
-            phone:'',
-            city:'',
-            state:'',
-            address:'',
+        // buyer:{
+        //     name:'', 
+        //     email:'',
+        //     phone:'',
+        //     city:'',
+        //     state:'',
+        //     address:'',
+        // }
         }
+    
+    const {cart, totalPrice} = useCartContext();
 
-    const [buyer, setBuyer] = useState(initialValue)
+    const buy = {
+
+        items: cart.map( product => ({ id: product.id, title: product.title, price: product.price, quantity: product.quantity})) ,
+        total: totalPrice(),
+
+    }
+    const [buyer, setBuyer] = useState([])
 
     const catchInputs = (e) => {
         setBuyer({...buyer, [e.target.name]: e.target.value})
@@ -30,12 +41,13 @@ export const BuyForm = () => {
         e.preventDefault();
         try {
             await addDoc(collection(db,'buys'),{
-                ...buyer
+                buyer,
+                buy
             })
         } catch (error) {
             console.log(Error);
         }
-        setBuyer({...initialValue})
+        setBuyer({initialValue})
     }
 
 return (
