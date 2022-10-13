@@ -11,7 +11,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const Navbartest = () => {
 return (
 
-    <Navbar className='navbackground'> 
+    <Navbar> 
         <Nav className='container'>
 
             <Dropdown className='dropdownbox'>
@@ -19,9 +19,8 @@ return (
                     Catalogo
                 </Dropdown.Toggle>
                     <Dropdown.Menu className='dropdownmenu'>
-                        <Dropdown.Item><Link to='/category/enterizas' className='nav-text-dropdown'>Enterizas</Link></Dropdown.Item>
-                        <Dropdown.Item><Link to='/category/bikini' className='nav-text-dropdown'>Bikini</Link></Dropdown.Item>
-                        <Dropdown.Item ><Link className='nav-text-dropdown'>noexistetdv</Link></Dropdown.Item>
+                        <Dropdown.Item className='d-flex justify-content-center'><Link to='/category/enterizas' className='nav-text-dropdown'>ENTERIZAS</Link></Dropdown.Item>
+                        <Dropdown.Item className='d-flex justify-content-center'><Link to='/category/bikini' className='nav-text-dropdown'>BIKINIS</Link></Dropdown.Item>
                     </Dropdown.Menu>
             </Dropdown>
 
