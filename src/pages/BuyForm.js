@@ -6,24 +6,14 @@ import Row from 'react-bootstrap/Row';
 import firebaseApp from '../firebase/config'
 import  { getFirestore, collection, addDoc }  from 'firebase/firestore'
 import { useCartContext } from '../CartContext';
+import Swal from 'sweetalert2'
 
 
     const db = getFirestore()
 
-export const BuyForm = () => {
-
-    const initialValue = {
-        // buyer:{
-        //     name:'', 
-        //     email:'',
-        //     phone:'',
-        //     city:'',
-        //     state:'',
-        //     address:'',
-        // }
-        }
+    const BuyForm = () => {
     
-    const {cart, totalPrice} = useCartContext();
+    const {cart, totalPrice, cleanCart} = useCartContext();
 
     const buy = {
 
@@ -42,13 +32,25 @@ export const BuyForm = () => {
         try {
             await addDoc(collection(db,'buys'),{
                 buyer,
-                buy
+                buy,
             })
         } catch (error) {
             console.log(Error);
         }
-        setBuyer({initialValue})
-    }
+        setBuyer(
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Compra realizada con exito!',
+                text:'Nos contactaremos por correo electronico para continuar con los detalles',
+                showConfirmButton: true,
+                confirmButtonColor:'black',
+                timer: 80000,
+    }),
+        cleanCart())
+    };
+
+
 
 return (
     <div>
@@ -57,6 +59,11 @@ return (
         <Form.Group as={Col} controlId="formGridEmail">
         <Form.Label></Form.Label>
         <Form.Control name="email" type="email" placeholder="Email" onChange={catchInputs} value={buyer.email}/>
+        </Form.Group>
+
+        <Form.Group as={Col} controlId="formGridEmail">
+        <Form.Label></Form.Label>
+        <Form.Control name="email" type="email" placeholder="Confirmar email" onChange={catchInputs} value={buyer.email}/>
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridNme">
