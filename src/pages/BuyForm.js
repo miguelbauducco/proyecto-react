@@ -11,7 +11,7 @@ import Swal from 'sweetalert2'
 
     const db = getFirestore()
 
-    const BuyForm = () => {
+    export const BuyForm = () => {
     
     const {cart, totalPrice, cleanCart} = useCartContext();
 
@@ -19,9 +19,18 @@ import Swal from 'sweetalert2'
 
         items: cart.map( product => ({ id: product.id, title: product.title, price: product.price, quantity: product.quantity})) ,
         total: totalPrice(),
-
     }
-    const [buyer, setBuyer] = useState([])
+
+    const initialValue = {
+            name:'', 
+            email:'',
+            phone:'',
+            city:'',
+            state:'',
+            address:'',
+        }
+
+    const [buyer, setBuyer] = useState(initialValue)
 
     const catchInputs = (e) => {
         setBuyer({...buyer, [e.target.name]: e.target.value})
@@ -38,7 +47,8 @@ import Swal from 'sweetalert2'
             console.log(Error);
         }
         setBuyer(
-            Swal.fire({
+        {...initialValue})
+                Swal.fire({
                 position: 'center',
                 icon: 'success',
                 title: 'Compra realizada con exito!',
@@ -46,8 +56,8 @@ import Swal from 'sweetalert2'
                 showConfirmButton: true,
                 confirmButtonColor:'black',
                 timer: 80000,
-    }),
-        cleanCart())
+});
+        cleanCart()
     };
 
 
@@ -59,11 +69,6 @@ return (
         <Form.Group as={Col} controlId="formGridEmail">
         <Form.Label></Form.Label>
         <Form.Control name="email" type="email" placeholder="Email" onChange={catchInputs} value={buyer.email}/>
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridEmail">
-        <Form.Label></Form.Label>
-        <Form.Control name="email" type="email" placeholder="Confirmar email" onChange={catchInputs} value={buyer.email}/>
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridNme">
