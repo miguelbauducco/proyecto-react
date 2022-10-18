@@ -5,10 +5,9 @@
     margin: 10px;
     font-size: 23px;
     margin: 33px;
-    color: gold;
+    color: goldenrod;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
-    -webkit-text-stroke: 1px black;
     font-style: italic;
 }
 
@@ -21,6 +20,10 @@
     color: goldenrod;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
-    -webkit-text-stroke: 1px black;
     font-style: italic;
+} 
+
+
+.link{
+    text-decoration: none;
 }
