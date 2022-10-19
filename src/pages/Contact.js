@@ -4,12 +4,12 @@ import '../styles/contact.css'
 
 
 
+
 const Contact = () => {
     return (
         <div>
             <h2 className="d-flex justify-content-center h1contact">Contactate con nuestro personal de atencion:</h2>
             <p className="d-flex justify-content-center contact">regnumconsultas@gmail.com</p>
-            <a href="https://www.instagram.com/regnum.ar/"><p className="d-flex justify-content-center contact">Tambien podes encontranos en Instagram haciendo click aquí</p></a>
         </div>
     )
 }

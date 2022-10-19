@@ -16,7 +16,7 @@ const Cart = () => {
         return (
             <div>
             <h2 className='empty'>¡El carrito se encuentra vacio!</h2>
-            <Link to='/'><button>Volver</button></Link>
+            <Link className='link' to='/'><button>Volver</button></Link>
             </div>
         );
     }
@@ -27,10 +27,10 @@ return (
         {
             cart.map(product => <ItemCart key={product.id} product={product}/>)
         }
-        <p className='total'>Precio total: ${totalPrice()}</p>
+        <div className='back'><p className='total'>Precio total: ${totalPrice()}</p></div>
         </div>
         <div>
-            <Link to='/buyform'>
+            <Link className='link' to='/buyform'>
             <button>
                 Comprar
             </button>

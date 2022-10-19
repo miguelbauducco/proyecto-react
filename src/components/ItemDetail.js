@@ -18,19 +18,18 @@ export const ItemDetail = ({productDetailInfo}) => {
 
 return(
     <div className='container'>
-        <h3 className='productdetail'>{productDetailInfo.title}</h3>
-            <div className='productdetail'>
-                <img src={productDetailInfo.img} alt="fotoproducto" style={{width:400, height:300}}/>
-            </div>  
-        <div className='productdetail'>{productDetailInfo.detail}</div>
-        <div className='productdetail'>{productDetailInfo.price}</div>
-        <div>
-            {
-                goToCart
-                ? <Link to='/cart' className='finishbutton'><button className='finishbutton'>Terminar compra</button></Link>
-                :<ItemCount stock='10' onAdd={onAdd}/>
-            }  
-        </div>
+            <div className='d-flex justify-content-center'>
+                <img src={productDetailInfo.img} alt="fotoproducto" style={{width:400, height:500}}/>
+            </div>
+                <h3 className='title'>{productDetailInfo.title}</h3>
+                <div className='detail'>{productDetailInfo.detail}</div>
+                <div className='price'>${productDetailInfo.price}</div>
+                <div>
+                    { goToCart
+                    ? <Link to='/cart' className='finishbutton'><button className='finishbutton'>Terminar compra</button></Link>
+                    :<ItemCount stock='10' onAdd={onAdd}/>
+                    }  
+                </div>
     </div>
 );
 }

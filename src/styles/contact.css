@@ -6,10 +6,11 @@
     display: flex;
     -webkit-text-stroke: 1px black;
     margin: 100px;
+    font-style: italic;
 }
 
 .contact{
-    font-size: 23px;
+    font-size: 30px;
     margin: 30px;
     color: gold;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
